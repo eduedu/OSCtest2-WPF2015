@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OSCtest2_WPF2015"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="500" Width="950" Background="#FF969696">
     <Grid>
-        
+        <Label x:Name="Label1" Content="Label" Margin="0,80,10,0" VerticalAlignment="Top" Height="315" Background="#FF00FF96" HorizontalAlignment="Right" Width="247"/>
+        <DataGrid x:Name="dataGrid"  ItemsSource="{Binding}" Margin="10,80,277,0" VerticalAlignment="Top" Height="265" SelectionChanged="dataGrid_SelectionChanged"/>
+        <Label x:Name="labelPreview" Content="labelPreview" HorizontalAlignment="Left" Margin="10,369,0,0" VerticalAlignment="Top" Width="315" Background="#FF00FF96" Height="32"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="30" Margin="55,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="440" Background="#FFFFFE78" ToolTip="filtro" TextChanged="textBox_TextChanged"/>
+        <Label x:Name="label" Content="Filtro:" HorizontalAlignment="Left" Margin="10,25,0,0" VerticalAlignment="Top"/>
+
     </Grid>
 </Window>
